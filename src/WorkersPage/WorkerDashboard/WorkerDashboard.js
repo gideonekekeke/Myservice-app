@@ -110,7 +110,7 @@ function WorkerDashboard() {
     mapRef.current = map;
   }, []);
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyAqAz4W3c8lDjtfdVUj9JRjR5yDnj2_-Ho",
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAP_API_KEY,
     libraries,
   });
   const [show, setShow] = useState(true);
