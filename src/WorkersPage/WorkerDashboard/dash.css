@@ -1,0 +1,35 @@
+@media screen and (max-width: 960px) {
+  .sidebar_menu {
+    display: block;
+  }
+}
+.sidebar_holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  color: white;
+
+  width: 95%;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar_holder {
+    width: 90%;
+  }
+}
+
+.gmnoprint a,
+.gmnoprint span {
+  display: none;
+}
+.gmnoprint div {
+  background: none !important;
+  display: none;
+}
+
+img[src="http://maps.gstatic.com/mapfiles/api-3/images/google_white2.png"]
+{
+  display: none;
+}
